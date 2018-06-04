@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+		<!-- 别名不区分大小写 -->
+		<!-- <typeAlias type="com.itheima.mybatis.pojo.User" alias="user" /> -->
+		<!-- 批量处理做别名配置，默认的别名：类名  别名不区分大小写-->
+		<package name="com.itheima.pojo"/>
+	</typeAliases>
+
+</configuration>
+

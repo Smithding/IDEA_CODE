@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	mapper动态代理的开发：只需要程序员编写接口 有规范：
+
+		1.namespace 必须和mapper接口的全路径一致
+
+		2.sql的映射文件sql对应的id的值 必须 和mapper接口的方法名一致
+
+		3.sql映射文件的parameterType的值必须和mapper接口的方法的参数的数据类型一致
+
+		4.sql映射文件的resultType的值必须和mapper接口的方法的返回值数据类型一致
+
+
+
+ -->
+<mapper namespace="com.itheima.mapper.ItemsMapper">
+
+
+
+
+</mapper>
