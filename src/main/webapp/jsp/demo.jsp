@@ -11,7 +11,6 @@
 <body> 
 <h1>这是一个例子</h1>
 	${message }
-    ${true01}
 </body>
 	
 </html>
