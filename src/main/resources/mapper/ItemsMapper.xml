@@ -33,9 +33,15 @@
 
 
     <insert id="insertItems" parameterType="items" useGeneratedKeys="true" keyProperty="id">
-        insert into items(name,price,detail)
-        values(#{name},#{price},#{detail})
+        insert into items(name,price,createtime,detail)
+        values(#{name},#{price},#{createtime},#{detail})
     </insert>
+
+    <update id="findupdateItems"  parameterType="items">
+             update items SET name=#{name},price=#{price},createtime=#{createtime},
+                    detail=#{detail}
+             where id=#{id}
+   </update>
 
 
 </mapper>

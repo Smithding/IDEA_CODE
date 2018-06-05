@@ -18,4 +18,6 @@ public interface ItemsMapper {
     public List<Items> finditemsByName(String name);
 
     public void insertItems(Items items);
+
+    public void findupdateItems(Items items);
 }

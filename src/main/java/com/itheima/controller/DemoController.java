@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.HttpServletBean;
 import org.springframework.web.servlet.ModelAndView;
@@ -58,7 +59,6 @@ public class DemoController {
     //保存提交商品,需要解决乱码问题
     @RequestMapping("updateitem")
     public String updateItem(Items items){
-
 
         itemService.updateItem(items);
         return "index";

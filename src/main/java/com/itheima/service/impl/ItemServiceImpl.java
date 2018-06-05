@@ -29,10 +29,10 @@ public class ItemServiceImpl implements  ItemService {
         return itemsMapper.findItemsById(id);
     }
 
-    //保存数据
+    //修改数据
     @Override
     public void updateItem(Items items) {
-         itemsMapper.insertItems(items);
+         itemsMapper.findupdateItems(items);
     }
 
 
