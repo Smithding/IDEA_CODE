@@ -15,10 +15,11 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <!-- 事物管理器 -->
     <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
-
+    <!-- 通知  -->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             <tx:method name="save*" propagation="REQUIRED"/>
@@ -29,6 +30,8 @@
             <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
         </tx:attributes>
     </tx:advice>
+
+    <!--  切面 -->
     <aop:config>
         <aop:advisor advice-ref="txAdvice"
                      pointcut="execution(* com.itheima.service.impl.*.*(..))"/>

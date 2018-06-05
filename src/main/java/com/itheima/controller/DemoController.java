@@ -40,7 +40,6 @@ public class DemoController {
     public ModelAndView getItemlist(){
         List<Items> list = itemService.getItemlist();
         ModelAndView modelAndView = new ModelAndView();
-        System.out.println(list.size());
         modelAndView.addObject("itemlist",list);
         modelAndView.setViewName("itemList");
         return modelAndView;

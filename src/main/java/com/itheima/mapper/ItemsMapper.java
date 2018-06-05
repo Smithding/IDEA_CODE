@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * s
  */
-@Repository
+
 public interface ItemsMapper {
 
     public List<Items> selectByExample();
